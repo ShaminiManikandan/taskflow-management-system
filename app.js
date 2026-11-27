@@ -40,9 +40,24 @@ function displayTasks() {
             saveTasks();
             displayTasks();
         };
+        let editButton = document.createElement("button");
+editButton.textContent = "Edit";
+editButton.style.marginLeft = "10px";
+editButton.style.background = "#2563eb";
+
+editButton.onclick = function() {
+    let newTaskName = prompt("Enter updated task:", task.name);
+
+    if (newTaskName !== null && newTaskName.trim() !== "") {
+        tasks[index].name = newTaskName.trim();
+        saveTasks();
+        displayTasks();
+    }
+};
 
         li.appendChild(taskText);
         li.appendChild(completeButton);
+        li.appendChild(editButton);
         li.appendChild(deleteButton);
 
         taskList.appendChild(li);
