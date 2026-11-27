@@ -98,23 +98,4 @@ button:hover {
     button {
         width: 100%;
     }
-}<section class="dashboard">
-    <h2>Task Dashboard</h2>
-
-    <div class="stats">
-        <div class="stat-card">
-            <h3>Total Tasks</h3>
-            <p id="totalTasks">0</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>Completed</h3>
-            <p id="completedTasks">0</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>Pending</h3>
-            <p id="pendingTasks">0</p>
-        </div>
-    </div>
-</section>
+}
