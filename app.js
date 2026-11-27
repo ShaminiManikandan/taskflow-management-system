@@ -62,6 +62,7 @@ editButton.onclick = function() {
 
         taskList.appendChild(li);
     });
+    updateDashboard();
 }
 
 function addTask() {
